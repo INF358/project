@@ -18,21 +18,19 @@
 
 @implementation ViewController
 
+-(void) loadView
+{
+    NSString *stringURL = @"http://www.google.fr";
+    NSURL *url = [NSURL URLWithString:stringURL];
+    [[UIApplication sharedApplication] openURL:url];
+
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    
-    while(1) {
-        AudioSessionInitialize(NULL, NULL, NULL, NULL);
-        AudioSessionSetActive(YES);
 
-        
-        
-    }
-    
     
 }
 
@@ -51,9 +49,17 @@
     
 }
 
+
+//Fonction lié à l'appui sur le bouton pour lancer les settings
+- (IBAction)launchSettingsButton:(id)sender
+{
+    
+    
+}
+
 //Fonction pour récupérer les touches volumes activées
 
--(void) startLogingVolumeInformation
+/*-(void) startLogingVolumeInformation
 {
     
     //On declare une ouverture de session audio
@@ -71,7 +77,7 @@
         NSLog(@"Volume up pressed");
         launchVolume = currentVolume;
     }
-}
+}*/
 
 
 @end
