@@ -23,6 +23,7 @@
 		434D483218D9B75E005AA32D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434D480D18D9B75D005AA32D /* Foundation.framework */; };
 		434D483A18D9B75E005AA32D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 434D483818D9B75E005AA32D /* InfoPlist.strings */; };
 		434D483D18D9B75E005AA32D /* proj358Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 434D483C18D9B75E005AA32D /* proj358Tests.m */; };
+		43CFD95B18D9DE870017166F /* VolumeButtonListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CFD95A18D9DE870017166F /* VolumeButtonListener.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		434D483918D9B75E005AA32D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		434D483B18D9B75E005AA32D /* proj358Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proj358Tests.h; sourceTree = "<group>"; };
 		434D483C18D9B75E005AA32D /* proj358Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = proj358Tests.m; sourceTree = "<group>"; };
+		43CFD95918D9DE870017166F /* VolumeButtonListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeButtonListener.h; sourceTree = "<group>"; };
+		43CFD95A18D9DE870017166F /* VolumeButtonListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeButtonListener.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				434D482618D9B75D005AA32D /* ViewController.h */,
 				434D482718D9B75D005AA32D /* ViewController.m */,
 				434D481218D9B75D005AA32D /* Supporting Files */,
+				43CFD95918D9DE870017166F /* VolumeButtonListener.h */,
+				43CFD95A18D9DE870017166F /* VolumeButtonListener.m */,
 			);
 			path = proj358;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				434D481818D9B75D005AA32D /* main.m in Sources */,
 				434D481C18D9B75D005AA32D /* AppDelegate.m in Sources */,
 				434D482818D9B75D005AA32D /* ViewController.m in Sources */,
+				43CFD95B18D9DE870017166F /* VolumeButtonListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +459,7 @@
 				434D484218D9B75E005AA32D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		434D484318D9B75E005AA32D /* Build configuration list for PBXNativeTarget "proj358Tests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +468,7 @@
 				434D484518D9B75E005AA32D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    float launchVolume;
+    float currentVolume;
+}
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+
+
 
 @end
