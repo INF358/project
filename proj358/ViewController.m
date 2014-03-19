@@ -18,20 +18,15 @@
 
 @implementation ViewController
 
--(void) loadView
-{
-    NSString *stringURL = @"http://www.google.fr";
-    NSURL *url = [NSURL URLWithString:stringURL];
-    [[UIApplication sharedApplication] openURL:url];
-
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    
+    NSString *stringURL = @"http://www.google.fr";
+    NSURL *url = [NSURL URLWithString:stringURL];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 - (void)didReceiveMemoryWarning
