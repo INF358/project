@@ -13,7 +13,7 @@
     float launchVolume;
     float currentVolume;
 }
--(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 - (IBAction)launchSettingsButton:(id)sender;
 
 

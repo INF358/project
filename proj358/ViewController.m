@@ -23,10 +23,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
-    NSString *stringURL = @"http://www.google.fr";
-    NSURL *url = [NSURL URLWithString:stringURL];
-    [[UIApplication sharedApplication] openURL:url];
+    NSLog(@"appli lancée");
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,7 +33,7 @@
 }
 
 // Fonction pour récupérer les coordonnées de l'écran ayant été touchées
--(void) screenTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint location = [touch locationInView:touch.view];
@@ -48,31 +45,10 @@
 //Fonction lié à l'appui sur le bouton pour lancer les settings
 - (IBAction)launchSettingsButton:(id)sender
 {
-    
+    NSLog(@"settings button pressed");
     
 }
 
-//Fonction pour récupérer les touches volumes activées
-
-/*-(void) startLogingVolumeInformation
-{
-    
-    //On declare une ouverture de session audio
-    AudioSessionInitialize(NULL, NULL, NULL, NULL);
-    AudioSessionSetActive(YES);
-    currentVolume = [[MPMusicPlayerController applicationMusicPlayer] volume];
-    
-    launchVolume = [[MPMusicPlayerController applicationMusicPlayer] volume];
-
-    if (currentVolume < launchVolume){
-        NSLog(@"Volume down pressed");
-        launchVolume = currentVolume;
-    }
-    if (currentVolume > launchVolume){
-        NSLog(@"Volume up pressed");
-        launchVolume = currentVolume;
-    }
-}*/
 
 
 @end
