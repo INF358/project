@@ -12,9 +12,15 @@
 {
     float launchVolume;
     float currentVolume;
+
+    NSSet* touches;
+    UIEvent* event;
 }
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 - (IBAction)launchSettingsButton:(id)sender;
+
+-(void) openFileStream:(NSString*) filePath;
+
 
 
 

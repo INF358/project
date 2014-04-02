@@ -9,46 +9,36 @@
 #import "ViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <MediaPlayer/MediaPlayer.h>
-
-@interface ViewController ()
-
-@end
+#import "AppDelegate.h"
 
 //First comment
 
 @implementation ViewController
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"appli lancée");
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
+}   
 
-// Fonction pour récupérer les coordonnées de l'écran ayant été touchées
--(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+
+
+-(void) screenTouched
 {
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint location = [touch locationInView:touch.view];
-    NSLog(@"screen touched at x_%f y_%f", location.x, location.y);
     
+    NSString* coord = [NSString stringWithFormat:@"screen touched at x_%f y_%f\n",location.x, location.y];
+
+    NSLog(@"from screenTouched method : %@", coord);
 }
-
-
-//Fonction lié à l'appui sur le bouton pour lancer les settings
-- (IBAction)launchSettingsButton:(id)sender
-{
-    NSLog(@"settings button pressed");
-    
-}
-
 
 
 @end

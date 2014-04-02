@@ -9,7 +9,24 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    NSArray *paths;
+    NSString *filePath;
+    NSString *fileName;
+    NSString *coord;
+    NSOutputStream *stream;
+    NSData *data;
+    /*NSSet* touches;
+    UIEvent* event;*/
+    
+}
 @property (strong, nonatomic) UIWindow *window;
+
+-(NSString*) filePath;
+-(void) setFilePath:(NSString*)newFilePath;
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+-(void) openFileStream:(NSString*) filePath;
+-(void) initiateLog;
+-(void) defineFilePath:(NSString*) deviceUDID;
 
 @end
