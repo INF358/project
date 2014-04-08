@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScreenRec.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
@@ -16,8 +17,8 @@
     NSString *coord;
     NSOutputStream *stream;
     NSData *data;
-    /*NSSet* touches;
-    UIEvent* event;*/
+    NSSet* touches;
+    UIEvent* event;
     
 }
 @property (strong, nonatomic) UIWindow *window;
@@ -28,5 +29,6 @@
 -(void) openFileStream:(NSString*) filePath;
 -(void) initiateLog;
 -(void) defineFilePath:(NSString*) deviceUDID;
+- (BOOL)uploadImgFile:(NSString *) fileName withFilePath:(NSString*) filePath;
 
 @end

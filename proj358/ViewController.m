@@ -10,6 +10,9 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "AppDelegate.h"
+#import "listenerScreenTouched.h"
+#import <QuartzCore/CALayer.h>
+
 
 //First comment
 
@@ -19,26 +22,27 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIWindow *keyTarget = [[UIApplication sharedApplication] keyWindow];
+    NSInteger winNum = [keyTarget windowLevel];
     
-}
+    NSString* deviceUDID = [[UIDevice currentDevice] uniqueIdentifier];
+    NSLog(@"%@", deviceUDID);
+    
+    NSLog(@"viewDidLoad : %d",winNum);
+    
+    
+    NSDate *date = [NSDate date];
+    NSDateFormatter* df = [[NSDateFormatter alloc]init];
+    [df setDateFormat:@"dd-MM-yyyy"];
+    NSLog(@"l'heure : %@", [df stringFromDate:date]);
+    
+   }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }   
-
-
-
--(void) screenTouched
-{
-    UITouch *touch = [[event allTouches] anyObject];
-    CGPoint location = [touch locationInView:touch.view];
-    
-    NSString* coord = [NSString stringWithFormat:@"screen touched at x_%f y_%f\n",location.x, location.y];
-
-    NSLog(@"from screenTouched method : %@", coord);
-}
 
 
 @end

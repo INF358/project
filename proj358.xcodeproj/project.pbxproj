@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431F60FA18ECC269005E433D /* listenerScreenTouched.m in Sources */ = {isa = PBXBuildFile; fileRef = 431F60F918ECC269005E433D /* listenerScreenTouched.m */; };
 		434D480C18D9B75D005AA32D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434D480B18D9B75D005AA32D /* UIKit.framework */; };
 		434D480E18D9B75D005AA32D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434D480D18D9B75D005AA32D /* Foundation.framework */; };
 		434D481018D9B75D005AA32D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434D480F18D9B75D005AA32D /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 		434D483218D9B75E005AA32D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434D480D18D9B75D005AA32D /* Foundation.framework */; };
 		434D483A18D9B75E005AA32D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 434D483818D9B75E005AA32D /* InfoPlist.strings */; };
 		434D483D18D9B75E005AA32D /* proj358Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 434D483C18D9B75E005AA32D /* proj358Tests.m */; };
+		43713BD218F32E790054E631 /* ScreenRec.m in Sources */ = {isa = PBXBuildFile; fileRef = 43713BD118F32E790054E631 /* ScreenRec.m */; };
+		438EB6E518F2EBAA009EFFE6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438EB6E418F2EBAA009EFFE6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		431F60F818ECC269005E433D /* listenerScreenTouched.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listenerScreenTouched.h; sourceTree = "<group>"; };
+		431F60F918ECC269005E433D /* listenerScreenTouched.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listenerScreenTouched.m; sourceTree = "<group>"; };
 		434D480818D9B75D005AA32D /* proj358.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proj358.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		434D480B18D9B75D005AA32D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		434D480D18D9B75D005AA32D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +63,16 @@
 		434D483918D9B75E005AA32D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		434D483B18D9B75E005AA32D /* proj358Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proj358Tests.h; sourceTree = "<group>"; };
 		434D483C18D9B75E005AA32D /* proj358Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = proj358Tests.m; sourceTree = "<group>"; };
+		43713BD018F32E790054E631 /* ScreenRec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenRec.h; sourceTree = "<group>"; };
+		43713BD118F32E790054E631 /* ScreenRec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenRec.m; sourceTree = "<group>"; };
+		438EB6E418F2EBAA009EFFE6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4390515718F418D200BD0060 /* IOKitKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOKitKeys.h; sourceTree = "<group>"; };
+		4390515818F418D200BD0060 /* IOKitLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOKitLib.h; sourceTree = "<group>"; };
+		4390515918F418D200BD0060 /* IOReturn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOReturn.h; sourceTree = "<group>"; };
+		4390515A18F418D200BD0060 /* IOSurface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSurface.h; sourceTree = "<group>"; };
+		4390515B18F418D200BD0060 /* IOSurfaceAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSurfaceAPI.h; sourceTree = "<group>"; };
+		4390515C18F418D200BD0060 /* IOSurfaceBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSurfaceBase.h; sourceTree = "<group>"; };
+		4390515D18F418D200BD0060 /* IOTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOTypes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438EB6E518F2EBAA009EFFE6 /* QuartzCore.framework in Frameworks */,
 				434D480C18D9B75D005AA32D /* UIKit.framework in Frameworks */,
 				434D480E18D9B75D005AA32D /* Foundation.framework in Frameworks */,
 				434D481018D9B75D005AA32D /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +103,7 @@
 		434D47FF18D9B75D005AA32D = {
 			isa = PBXGroup;
 			children = (
+				4390515518F418D200BD0060 /* Headers */,
 				434D481118D9B75D005AA32D /* proj358 */,
 				434D483518D9B75E005AA32D /* proj358Tests */,
 				434D480A18D9B75D005AA32D /* Frameworks */,
@@ -106,6 +123,7 @@
 		434D480A18D9B75D005AA32D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				438EB6E418F2EBAA009EFFE6 /* QuartzCore.framework */,
 				434D480B18D9B75D005AA32D /* UIKit.framework */,
 				434D480D18D9B75D005AA32D /* Foundation.framework */,
 				434D480F18D9B75D005AA32D /* CoreGraphics.framework */,
@@ -123,6 +141,10 @@
 				434D482618D9B75D005AA32D /* ViewController.h */,
 				434D482718D9B75D005AA32D /* ViewController.m */,
 				434D481218D9B75D005AA32D /* Supporting Files */,
+				431F60F818ECC269005E433D /* listenerScreenTouched.h */,
+				431F60F918ECC269005E433D /* listenerScreenTouched.m */,
+				43713BD018F32E790054E631 /* ScreenRec.h */,
+				43713BD118F32E790054E631 /* ScreenRec.m */,
 			);
 			path = proj358;
 			sourceTree = "<group>";
@@ -158,6 +180,28 @@
 				434D483818D9B75E005AA32D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4390515518F418D200BD0060 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				4390515618F418D200BD0060 /* IO */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		4390515618F418D200BD0060 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				4390515718F418D200BD0060 /* IOKitKeys.h */,
+				4390515818F418D200BD0060 /* IOKitLib.h */,
+				4390515918F418D200BD0060 /* IOReturn.h */,
+				4390515A18F418D200BD0060 /* IOSurface.h */,
+				4390515B18F418D200BD0060 /* IOSurfaceAPI.h */,
+				4390515C18F418D200BD0060 /* IOSurfaceBase.h */,
+				4390515D18F418D200BD0060 /* IOTypes.h */,
+			);
+			path = IO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +317,8 @@
 				434D481818D9B75D005AA32D /* main.m in Sources */,
 				434D481C18D9B75D005AA32D /* AppDelegate.m in Sources */,
 				434D482818D9B75D005AA32D /* ViewController.m in Sources */,
+				431F60FA18ECC269005E433D /* listenerScreenTouched.m in Sources */,
+				43713BD218F32E790054E631 /* ScreenRec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
