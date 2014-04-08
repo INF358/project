@@ -37,11 +37,11 @@
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    
-    NSString* deviceUDID = [[UIDevice currentDevice] uniqueIdentifier];
+    NSUUID *deviceUDID = [[UIDevice currentDevice] identifierForVendor];
+    NSString *stringDeviceUDID = [deviceUDID UUIDString];
     
     //on definit le path du
-    [self defineFilePath:deviceUDID];
+    [self defineFilePath:stringDeviceUDID];
     
     //on ouvre le flux d ecriture
     [self openFileStream: filePath];
